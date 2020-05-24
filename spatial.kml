@@ -2,8 +2,15 @@
 <kml xmlns="http://earth.google.com/kml/2.0">
 	<Document>
 		<Style id="z1">
-			<IconStyle><Icon><href>http://www.google.com/intlen_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+			<IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/shapes/dining.png</href></Icon></IconStyle>
 		</Style>
+		<Style id="z2">
+			<IconStyle><Icon><href>https://maps.google.com/mapfiles/kml/shapes/library_maps.png</href></Icon></IconStyle>
+		</Style>
+		<Style id="z3">
+			<IconStyle><Icon><href>https://maps.google.com/mapfiles/kml/shapes/museum_maps.png</href></Icon></IconStyle>
+		</Style>
+
 
 <Placemark>
 	<name>Fast Food</name>
@@ -42,70 +49,70 @@
 	</Placemark>
 	<Placemark>
 		<name>Museum</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.360797,34.063318</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Museum</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.361624,34.062129</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Museum</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.355438,34.063798</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Museum</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.355719,34.074531</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Museum</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.474077,34.078048</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Libraries</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.288748,34.019628</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Libraries</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.286600,34.018698</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Libraries</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.282784,34.021723</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Libraries</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.276407,34.019070</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
 		<name>Libraries</name>
-		<styleUrl>#z1</styleUrl>
+		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.276789,34.031344</coordinates>
 		</Point>
