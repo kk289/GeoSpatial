@@ -26,6 +26,9 @@ Libraries:
 14. Grand Avenue Library (34.019070, -118.276407)
 15. J. Thomas McCarthy Library (34.031344, -118.276789)
 
+Sample:
+
+![15 points on map](MapLocations.png)
 
 KML File with 15 Coordinates: 
 
@@ -232,7 +235,7 @@ Then Update spatial.kml file: (Paste this code after line 120)
 
 Sample:
 
-![convex hull](convex hull.png)
+![convex hull](ConvexHull.png)
 
 
 Assignment Link:
