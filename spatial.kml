@@ -120,14 +120,17 @@
 	</Placemark>
 
 <!-- Convex hull for all 15 points -->
-	<Style id="convex-hull">
-		<Polystyle>
-			<color>ff7850F0</color>
-		</Polystyle>
-	</Style>
+	<Style id="transBluePoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7dff0000</color>
+      </PolyStyle>
+    </Style>
   	<Placemark>
-  		<styleUrl>#convex-hull</styleUrl>
     <name>Convex Hull</name>
+    <styleUrl>#transBluePoly</styleUrl>
     <Polygon>
       <extrude>1</extrude>
       <altitudeMode>relativeToGround</altitudeMode>
@@ -147,5 +150,3 @@
   </Placemark>
 </Document>
 </kml>
-
-

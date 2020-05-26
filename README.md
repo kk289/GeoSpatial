@@ -26,6 +26,9 @@ Libraries:
 14. Grand Avenue Library (34.019070, -118.276407)
 15. J. Thomas McCarthy Library (34.031344, -118.276789)
 
+
+KML File with 15 Coordinates: 
+
 ```
 ?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.0">
@@ -197,14 +200,17 @@ POLYGON((34.078048 -118.474077,34.018698 -118.2866,34.01907 -118.276407,34.03134
 Then Update spatial.kml file: (Paste this code after line 120)
 ```
 <!-- Convex hull for all 15 points -->
-	<Style id="convex-hull">
-		<Polystyle>
-			<color>ff7850F0</color>
-		</Polystyle>
-	</Style>
+	<Style id="transBluePoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7dff0000</color>
+      </PolyStyle>
+    </Style>
   	<Placemark>
-  		<styleUrl>#convex-hull</styleUrl>
     <name>Convex Hull</name>
+    <styleUrl>#transBluePoly</styleUrl>
     <Polygon>
       <extrude>1</extrude>
       <altitudeMode>relativeToGround</altitudeMode>
@@ -223,6 +229,11 @@ Then Update spatial.kml file: (Paste this code after line 120)
     </Polygon>
   </Placemark>
 ```
+
+Sample:
+
+![convex hull](convex hull.png)
+
 
 Assignment Link:
 http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/hw/HW3/index.html
