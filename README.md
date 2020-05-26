@@ -26,6 +26,130 @@ Libraries:
 14. Grand Avenue Library (34.019070, -118.276407)
 15. J. Thomas McCarthy Library (34.031344, -118.276789)
 
+```
+?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+	<Document>
+		<Style id="z1">
+			<IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/shapes/dining.png</href></Icon></IconStyle>
+		</Style>
+		<Style id="z2">
+			<IconStyle><Icon><href>https://maps.google.com/mapfiles/kml/shapes/library_maps.png</href></Icon></IconStyle>
+		</Style>
+		<Style id="z3">
+			<IconStyle><Icon><href>https://maps.google.com/mapfiles/kml/shapes/museum_maps.png</href></Icon></IconStyle>
+		</Style>
+
+
+<Placemark>
+	<name>Fast Food</name>
+	<styleUrl>#z1</styleUrl>
+	<Point>
+		<coordinates>-118.364126,34.057163</coordinates>
+	</Point>
+	</Placemark>
+
+	<Placemark>
+		<name>Fast Food</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.364565,34.057035</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Fast Food</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.364533,34.057426</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Fast Food</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.364129,34.057062</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Fast Food</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.363983,34.057144</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Museum</name>
+		<styleUrl>#z3</styleUrl>
+		<Point>
+			<coordinates>-118.360797,34.063318</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Museum</name>
+		<styleUrl>#z3</styleUrl>
+		<Point>
+			<coordinates>-118.361624,34.062129</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Museum</name>
+		<styleUrl>#z3</styleUrl>
+		<Point>
+			<coordinates>-118.355438,34.063798</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Museum</name>
+		<styleUrl>#z3</styleUrl>
+		<Point>
+			<coordinates>-118.355719,34.074531</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Museum</name>
+		<styleUrl>#z3</styleUrl>
+		<Point>
+			<coordinates>-118.474077,34.078048</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Libraries</name>
+		<styleUrl>#z2</styleUrl>
+		<Point>
+			<coordinates>-118.288748,34.019628</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Libraries</name>
+		<styleUrl>#z2</styleUrl>
+		<Point>
+			<coordinates>-118.286600,34.018698</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Libraries</name>
+		<styleUrl>#z2</styleUrl>
+		<Point>
+			<coordinates>-118.282784,34.021723</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Libraries</name>
+		<styleUrl>#z2</styleUrl>
+		<Point>
+			<coordinates>-118.276407,34.019070</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Libraries</name>
+		<styleUrl>#z2</styleUrl>
+		<Point>
+			<coordinates>-118.276789,34.031344</coordinates>
+		</Point>
+	</Placemark>
+	</Document>
+</kml>
+```
 
 PostgresSQL Queries:
 
@@ -98,8 +222,6 @@ Then Update spatial.kml file: (Paste this code after line 120)
       </outerBoundaryIs>
     </Polygon>
   </Placemark>
-</Document>
-</kml>
 ```
 
 Assignment Link:
