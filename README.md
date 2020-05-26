@@ -1,15 +1,15 @@
 # GeoSpatial Data Handling
 
-I follow up following assignment to understand Geospatial Data Handling. Following assignment is from University of Southern California course (CSCI 585: Database Systems)
+I followed up the USC assignment to understand Geospatial Data Handling. The assignment is from the University of Southern California Engineering course (CSCI 585: Database Systems).
 
 Assignment Link:
 http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/hw/HW3/index.html
 
-Part 1: Collect Data Co-ordinates
+## PART 1: Collect Data Coordinates
 
-Collect latitude,longitude pairs (ie. spatial coordinates) for 15 locations, in the USC campus
+Collected latitude,longitude pairs (ie. spatial coordinates) for 15 locations, which are near the USC campus.
 
-Data Co-ordinates:
+Data Coordinates:
 
 Fast Food:
 
@@ -35,14 +35,14 @@ Libraries:
 14. Grand Avenue Library (34.019070, -118.276407)
 15. J. Thomas McCarthy Library (34.031344, -118.276789)
 
-Figure:
+Figure shows my 15 locations which are labeled nicely:
 ![15 points on map](images/MapLocations.png)
 
-Part 2: Create a KML file
+## PART 2: Create a KML file
 
 KML File with 15 Coordinates: 
 ```
-?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.0">
 	<Document>
 		<Style id="z1">
@@ -54,125 +54,143 @@ KML File with 15 Coordinates:
 		<Style id="z3">
 			<IconStyle><Icon><href>https://maps.google.com/mapfiles/kml/shapes/museum_maps.png</href></Icon></IconStyle>
 		</Style>
-
+		<Style id="z4">
+			<IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/orange-stars.png</href></Icon></IconStyle>
+		</Style>
 
 <Placemark>
-	<name>Fast Food</name>
+	<name>Fast Food: Parados Coffee and Tea</name>
 	<styleUrl>#z1</styleUrl>
 	<Point>
 		<coordinates>-118.364126,34.057163</coordinates>
 	</Point>
 	</Placemark>
-
 	<Placemark>
-		<name>Fast Food</name>
+		<name>Fast Food: Little Ethiopia</name>
 		<styleUrl>#z1</styleUrl>
 		<Point>
 			<coordinates>-118.364565,34.057035</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Fast Food</name>
+		<name>Fast Food: Lalibela</name>
 		<styleUrl>#z1</styleUrl>
 		<Point>
 			<coordinates>-118.364533,34.057426</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Fast Food</name>
+		<name>Fast Food: Market</name>
 		<styleUrl>#z1</styleUrl>
 		<Point>
 			<coordinates>-118.364129,34.057062</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Fast Food</name>
+		<name>Fast Food: E and M Coffee</name>
 		<styleUrl>#z1</styleUrl>
 		<Point>
 			<coordinates>-118.363983,34.057144</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Museum</name>
+		<name>Museum: Academy Museum of Motion Picture</name>
 		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.360797,34.063318</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Museum</name>
+		<name>Museum: Peterson Automotive Museum</name>
 		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.361624,34.062129</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Museum</name>
+		<name>Museum: The La Brea Tar Pits and Museum</name>
 		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.355438,34.063798</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Museum</name>
+		<name>Museum: Los Angeles Museum of the Holocaust</name>
 		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.355719,34.074531</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Museum</name>
+		<name>Museum: The Getty</name>
 		<styleUrl>#z3</styleUrl>
 		<Point>
 			<coordinates>-118.474077,34.078048</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Libraries</name>
+		<name>Libraries: Science and Engineering Library</name>
 		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.288748,34.019628</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Libraries</name>
+		<name>Libraries: Hoose Library of Philosophy</name>
 		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.286600,34.018698</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Libraries</name>
+		<name>Libraries: Leavey Library</name>
 		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.282784,34.021723</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Libraries</name>
+		<name>Libraries: Grand Avenue Library</name>
 		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.276407,34.019070</coordinates>
 		</Point>
 	</Placemark>
 	<Placemark>
-		<name>Libraries</name>
+		<name>Libraries: J. Thomas McCarthy Library</name>
 		<styleUrl>#z2</styleUrl>
 		<Point>
 			<coordinates>-118.276789,34.031344</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>University of California, Los Angeles</name>
+		<styleUrl>#z4</styleUrl>
+		<Point>
+			<coordinates>-118.445200,34.068925</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>University of Southern California</name>
+		<styleUrl>#z4</styleUrl>
+		<Point>
+			<coordinates>-118.285135,34.022345</coordinates>
 		</Point>
 	</Placemark>
 	</Document>
 </kml>
 ```
 
-Helpful reference links for part 2:
+Helpful links for part 2:
 
 https://developers.google.com/kml/documentation/kml_tut#placemarks
 http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/hw/HW3/data/starter_kml.xml
 https://developers.google.com/kml/documentation/kml_tut
 
-Part 3:
+KML Tutorial Link:
+https://developers.google.com/kml/documentation/kml_tut#placemarks
+
+## PART 3
 
 Download Google Earth by following link:
 https://www.google.com/earth/download/ge/agree.html
@@ -185,8 +203,26 @@ Just copy the .kml file below link instead of downloading google earth.
 http://display-kml.appspot.com/
 
 
-PostgresSQL Queries:
+## PART 4
 
+We need to run geospatial queries. I decided to use PostgreSQL with PostGIS extension on Amazon RDS (Amazon Relational Database Service) that way I do not need to install any softwares on my laptop. To setup Amazon RDS, I followed up following link:
+https://aws.amazon.com/getting-started/tutorials/create-connect-postgresql-db/
+
+* Just in case if you are using Terminal during setup. Use following code to install SQL Workbench:
+
+```
+file location path % sh /Applications/Workbench-Build125-with-optional-libs/sqlworkbench.sh
+```
+
+*Remeber your master username and password that you used to create Amazon RDS database.
+
+While following the tutorial link, I got problem in step 4. My SQL was not connecting to the AWS. So, I watched the following Youtube video to troubleshoot the connection problem (Link here: https://www.youtube.com/watch?v=PxFZt8MG2ss). After that, I was able to setup the SQL Workbench to Amazon RDS console. 
+
+## PART 5
+
+I run the following queries on SQL Workbench GUI.
+
+PostgresSQL Queries:
 ```
 CREATE EXTENSION postgis;
 CREATE TABLE geospatial(
@@ -214,21 +250,28 @@ VALUES
  ('point(34.031344 -118.276789)');
  ```
  
- ```
- select ST_AsText(location) from geospatial;
- ```
+```
+select ST_AsText(location) from geospatial;
+```
  
- ```
- SELECT ST_AsText(ST_ConvexHull(
-	ST_Collect(location)))
+#### To compute the Convex Hull
+ 
+```
+SELECT ST_AsText(ST_ConvexHull(ST_Collect(location)))
 	FROM geospatial;
 ```
 
-RESULT:
+Result I got: 
 
-POLYGON((34.078048 -118.474077,34.018698 -118.2866,34.01907 -118.276407,34.031344 -118.276789,34.074531 -118.355719,34.078048 -118.474077))
+POLYGON((
+34.078048 -118.474077,
+34.018698 -118.286600,
+34.019070  -118.276407,
+34.031344 -118.276789,
+34.074531 -118.355719,
+34.078048 -118.474077))
 
-Then Update spatial.kml file: (Paste this code after line 120)
+Then Update .kml file: (Paste below code in your .kml file)
 ```
 <!-- Convex hull for all 15 points -->
 	<Style id="transBluePoly">
@@ -266,10 +309,11 @@ Sample:
 ![convex hull](images/ConvexHull.png)
 ![convex hull](images/ConvexHull2.png)
 
-Question:
+To Learn more about the real life applications of convex hulls. Go to the link: https://www.quora.com/What-are-the-real-life-applications-of-convex-hulls
 
-• computing the four nearest neighbors of UCLA of my 15 locations 
+#### Compute the four nearest neighbors 
 
+I chose UCLA coordinate to compute its four nearest neighbours of my 15 locations.
 University of California, Los Angeles
 Los Angeles, CA 90095
 (34.068925, -118.445200)
@@ -281,7 +325,7 @@ Four Nearest Neighor from UCLA are:
 2. Paradocs Coffee And Tea (34.057163, -118.364126)
 3. Little Ethiopia (34.057035, -118.364565)
 
-Queries:
+Query:
 ```
 SELECT ST_Distance(location, 'POINT(34.068925 -118.445200)'::geometry) AS d, ST_AsText(location)
 FROM geospatial
@@ -289,7 +333,7 @@ ORDER BY d ASC limit 4;
 ```
 ![UCLA](images/4NN_UCLA.png)
 
-Let's Check USC too
+Let's Check USC too,
 
 University of Southern California
 Los Angeles, CA 90007
@@ -301,22 +345,24 @@ Four Nearest Neighor from UCLA are:
 3. Leavey Library (34.021723, -118.282784)
 4. Grand Avenue Library (34.019070, -118.276407)
 
-Queries:
+Query:
 ```
-SELECT ST_Distance(location, 'POINT(34.022345 -118.285135)'::geometry) as d, ST_AsText(location)
+SELECT ST_Distance(location, 'POINT(34.022345 -118.285135)'::geometry) AS d, ST_AsText(location)
 FROM geospatial
 ORDER BY d ASC limit 4;
 ```
 ![USC](images/4NN_USC.png)
 
-Helpful Reference for 4 nearest neighbour query:
+Helpful Reference for writing k-nearest neighbour query:
 https://postgis.net/docs/geometry_distance_knn.html
 
 
 
+Other Helpful Links:-
 
-KML Tutorial Link:
-https://developers.google.com/kml/documentation/kml_tut#placemarks
+Google Maps Icons:
+http://kml4earth.appspot.com/icons.html
 
-How can I troubleshoot connectivity to an RDS instance that uses a public/private subnet of a VPC?
-https://www.youtube.com/watch?v=PxFZt8MG2ss
+
+
+
