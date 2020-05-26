@@ -59,8 +59,7 @@ KML File with 15 Coordinates:
 		</Style>
 
 <Placemark>
-	<name>Fast Food: Parados Coffee and Tea</name>
-	<styleUrl>#z1</styleUrl>
+  <styleUrl>#z1</styleUrl>
 	<Point>
 		<coordinates>-118.364126,34.057163</coordinates>
 	</Point>
