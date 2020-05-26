@@ -176,7 +176,7 @@ KML File with 15 Coordinates:
 			<coordinates>-118.285135,34.022345</coordinates>
 		</Point>
 	</Placemark>
-	</Document>
+</Document>
 </kml>
 ```
 
