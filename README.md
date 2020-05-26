@@ -1,4 +1,13 @@
-# GeoSpatial
+# GeoSpatial Data Handling
+
+I follow up following assignment to understand Geospatial Data Handling. Following assignment is from University of Southern California course (CSCI 585: Database Systems)
+
+Assignment Link:
+http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/hw/HW3/index.html
+
+Part 1: Collect Data Co-ordinates
+
+Collect latitude,longitude pairs (ie. spatial coordinates) for 15 locations, in the USC campus
 
 Data Co-ordinates:
 
@@ -26,12 +35,12 @@ Libraries:
 14. Grand Avenue Library (34.019070, -118.276407)
 15. J. Thomas McCarthy Library (34.031344, -118.276789)
 
-Sample:
+Figure:
+![15 points on map](images/MapLocations.png)
 
-![15 points on map](MapLocations.png)
+Part 2: Create a KML file
 
 KML File with 15 Coordinates: 
-
 ```
 ?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.0">
@@ -157,6 +166,25 @@ KML File with 15 Coordinates:
 </kml>
 ```
 
+Helpful reference links for part 2:
+
+https://developers.google.com/kml/documentation/kml_tut#placemarks
+http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/hw/HW3/data/starter_kml.xml
+https://developers.google.com/kml/documentation/kml_tut
+
+Part 3:
+
+Download Google Earth by following link:
+https://www.google.com/earth/download/ge/agree.html
+
+Load the .kml file in google earth.
+
+OR
+
+Just copy the .kml file below link instead of downloading google earth.
+http://display-kml.appspot.com/
+
+
 PostgresSQL Queries:
 
 ```
@@ -235,12 +263,60 @@ Then Update spatial.kml file: (Paste this code after line 120)
 
 Sample:
 
-![convex hull](ConvexHull.png)
+![convex hull](images/ConvexHull.png)
+![convex hull](images/ConvexHull2.png)
+
+Question:
+
+• computing the four nearest neighbors of UCLA of my 15 locations 
+
+University of California, Los Angeles
+Los Angeles, CA 90095
+(34.068925, -118.445200)
+
+Four Nearest Neighor from UCLA are:
+
+1. The Getty
+2. Lalibela (34.057426, -118.364533)
+2. Paradocs Coffee And Tea (34.057163, -118.364126)
+3. Little Ethiopia (34.057035, -118.364565)
+
+Queries:
+```
+SELECT ST_Distance(location, 'POINT(34.068925 -118.445200)'::geometry) AS d, ST_AsText(location)
+FROM geospatial
+ORDER BY d ASC limit 4;
+```
+![UCLA](images/4NN_UCLA.png)
+
+Let's Check USC too
+
+University of Southern California
+Los Angeles, CA 90007
+(34.022345, -118.285135)
+
+Four Nearest Neighor from UCLA are:
+1. Science and Engineering Library (34.019628, -118.288748)
+2. Hoose Library of Philosophy (34.018698, -118.286600)
+3. Leavey Library (34.021723, -118.282784)
+4. Grand Avenue Library (34.019070, -118.276407)
+
+Queries:
+```
+SELECT ST_Distance(location, 'POINT(34.022345 -118.285135)'::geometry) as d, ST_AsText(location)
+FROM geospatial
+ORDER BY d ASC limit 4;
+```
+![USC](images/4NN_USC.png)
+
+Helpful Reference for 4 nearest neighbour query:
+https://postgis.net/docs/geometry_distance_knn.html
 
 
-Assignment Link:
-http://bytes.usc.edu/cs585/s20_db0ds1ml2agi/hw/HW3/index.html
+
 
 KML Tutorial Link:
 https://developers.google.com/kml/documentation/kml_tut#placemarks
 
+How can I troubleshoot connectivity to an RDS instance that uses a public/private subnet of a VPC?
+https://www.youtube.com/watch?v=PxFZt8MG2ss
