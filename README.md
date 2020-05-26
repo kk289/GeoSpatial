@@ -292,11 +292,11 @@ Then Update .kml file: (Paste below code in your .kml file)
         <LinearRing>
           <coordinates>
           	-118.474077,34.078048,500
-  			-118.286600,34.018698,500
-  			-118.276407,34.019070,500
-   			-118.276789,34.031344,500
-   			-118.355719,34.074531,500
-   			-118.474077,34.078048,500
+  		    	-118.286600,34.018698,500
+  			    -118.276407,34.019070,500
+   			    -118.276789,34.031344,500
+   			    -118.355719,34.074531,500
+   			    -118.474077,34.078048,500
           </coordinates>
         </LinearRing>
       </outerBoundaryIs>
@@ -331,6 +331,28 @@ SELECT ST_Distance(location, 'POINT(34.068925 -118.445200)'::geometry) AS d, ST_
 FROM geospatial
 ORDER BY d ASC limit 4;
 ```
+
+Then Update the .kml file:
+```
+<!-- Four Nearest neighbor from UCLA -->
+<Placemark>
+  	<name>Four Nearest Neighbor: UCLA</name>
+  	<Style>
+  	<LineStyle>  
+   	<color>#ff0000ff</color>
+  	</LineStyle> 
+ 	  </Style>
+   	<LineString>
+          <coordinates>
+          	-118.474077,34.078048,600
+			      -118.364533,34.057426,600
+			      -118.364565,34.057035,600
+			      -118.364126,34.057163,600
+          </coordinates>
+    </LineString>
+</Placemark>
+```
+
 ![UCLA](images/4NN_UCLA.png)
 
 Let's Check USC too,
@@ -351,6 +373,28 @@ SELECT ST_Distance(location, 'POINT(34.022345 -118.285135)'::geometry) AS d, ST_
 FROM geospatial
 ORDER BY d ASC limit 4;
 ```
+
+.kml file:
+```
+<!-- Four Nearest neighbour from USC -->
+<Placemark>
+	  <name>Four Nearest Neighbor: USC</name>
+  	<Style>
+  	<LineStyle>  
+   	<color>#ff0000ff</color>
+  	</LineStyle> 
+ 	  </Style>
+   	<LineString>
+         <coordinates>
+          	-118.282784,34.021723,600 
+			      -118.286600,34.018698,600
+			      -118.288748,34.019628,600
+		      	-118.276407,34.019070,600
+         </coordinates>
+    </LineString>
+</Placemark>
+```
+
 ![USC](images/4NN_USC.png)
 
 Helpful Reference for writing k-nearest neighbour query:
