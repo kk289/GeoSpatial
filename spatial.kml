@@ -19,6 +19,7 @@
 		<coordinates>-118.364126,34.057163</coordinates>
 	</Point>
 	</Placemark>
+
 	<Placemark>
 		<name>Fast Food</name>
 		<styleUrl>#z1</styleUrl>
@@ -117,6 +118,34 @@
 			<coordinates>-118.276789,34.031344</coordinates>
 		</Point>
 	</Placemark>
+
+<!-- Convex hull for all 15 points -->
+	<Style id="convex-hull">
+		<Polystyle>
+			<color>ff7850F0</color>
+		</Polystyle>
+	</Style>
+  	<Placemark>
+  		<styleUrl>#convex-hull</styleUrl>
+    <name>Convex Hull</name>
+    <Polygon>
+      <extrude>1</extrude>
+      <altitudeMode>relativeToGround</altitudeMode>
+      <outerBoundaryIs>
+        <LinearRing>
+          <coordinates>
+          	-118.474077,34.078048,500
+  			-118.286600,34.018698,500
+  			-118.276407,34.019070,500
+   			-118.276789,34.031344,500
+   			-118.355719,34.074531,500
+   			-118.474077,34.078048,500
+          </coordinates>
+        </LinearRing>
+      </outerBoundaryIs>
+    </Polygon>
+  </Placemark>
 </Document>
 </kml>
+
 
